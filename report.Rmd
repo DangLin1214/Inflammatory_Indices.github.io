@@ -57,7 +57,7 @@ Our initial questions were structured to explore potential connections between v
 
 ## Data Summary
 ### UKB Dataset
-The dataset used in this project is the UKB dataset. The UK Biobank provides a comprehensive dataset from 500,000 participants aged 40–69, collected between 2006 and 2010, to support health research. It includes baseline data from physical assessments, questionnaires, and health records, alongside genetic information from genotyping and sequencing. The resource also features imaging data (e.g., MRI and DEXA scans), biological samples (blood, urine, and saliva), linked health records (hospital admissions, primary care, and disease registries), activity data from wearable devices, and environmental information on air quality and socioeconomic factors. This extensive dataset is designed to advance understanding, prevention, diagnosis, and treatment of a wide range of diseases.
+We utilized the UK Biobank (UKB) dataset, a large-scale biomedical database and research resource containing in-depth genetic and health information from over half a million UK participants. Following a formal data application process, we obtained permission to access and utilize the UKB dataset for our research. [UK Biobank Dataset](https://www.ukbiobank.ac.uk) The dataset includes comprehensive health data collected through physical measurements, biological samples, and self-reported questionnaires, complemented by linked electronic health records. The data was initially collected between 2006 and 2010, with ongoing updates to include new information on health outcomes and laboratory tests as well as long-term follow-ups.
 
 After the data cleaning steps, the cleaned dataset includes 413,146 observations and 113 variables. Although we will not use all the variables in this dataset, we will select multiple key variables to investigate our research questions:
 
@@ -154,6 +154,10 @@ The final dataset included essential variables, such as demographics (`sex`, `ag
 <br> 
 
 ## Exploratory Data Analysis
+To understand the data structure and for further EDA, we initially examined the associations between key demographic and lifestyle variables, such as age, sex, alcohol consumption, blood pressure, income, diet quality, and sleep duration. This step aimed to identify potential patterns and relationships between participants' characteristics and overall health outcomes, laying the groundwork for subsequent analyses.
+
+To facilitate the initial understanding of inflammatory indices and for further survival analysis, we explored the relationships between blood parameters (e.g., lymphocyte-to-monocyte ratio, systemic immune-inflammation index) and exposure variables with disease outcomes like NAFLD and cirrhosis. This step provided insights into the predictive value of these indices and their interactions with other variables, offering a foundation for examining disease progression in later stages of the project.
+
 ```{r}
 ukb_data <- read_dta("./external_data/data_prepared.dta")
 ```
