@@ -25,18 +25,17 @@ After the data cleaning steps, the cleaned dataset includes 413,146 observations
 
 `total_met`: Total metabolic equivalent of task score, derived from physical activity data and grouped into categories. <br> 
 
-`diet_quality`: Diet quality score, ranging from 0 (poorest) to 7 (highest), based on adherence 
-to dietary guidelines. <br> 
+`diet_quality`: Diet quality score, ranging from 0 (poorest) to 7 (highest), based on adherence to DASHguideline. <br> 
 
 `sleep_hour`: Nightly sleep duration, measured in hours. <br> 
 
 `smoke_cat`: Smoking status, categorized as current smoker, past smoker, or non-smoker. <br> 
 
-`total_alcohol`: Total alcohol consumption, grouped into categories (non-drinker, low, moderate, high, very high). <br> 
+`total_alcohol`: Total alcohol consumption (ml/week), grouped into categories (non-drinker, low, moderate, high, very high). <br> 
 
-`non_hdl`: Non-HDL cholesterol level, a continuous variable indicating cardiovascular risk. <br> 
+`non_hdl`: Non-HDL cholesterol level, a continuous variable indicating cardiovascular risk. (mg/dl) <br> 
 
-`tg`: Triglyceride levels, a continuous measure of blood lipid levels. <br> 
+`tg`: Triglyceride levels, a continuous measure of blood lipid levels. (mg/dl) <br> 
 
 `bp_cat`: Blood pressure, categorized into intervals (e.g., BP=20, 40, 60, etc.). <br> 
 
@@ -102,4 +101,4 @@ To calculate disease progression metrics, survival durations were computed from 
 
 New biomarkers were derived to assess participants' health status and inflammation levels. For example, the lymphocyte-to-monocyte ratio (`expo_lmr`), systemic immune-inflammation index (`expo_sii`), and neutrophil-to-albumin ratio (`expo_npar`) were calculated. Critical thresholds were applied to categorize these biomarkers into clinical risk groups, such as low albumin levels (`cri_album` <4 g/dL) or high neutrophil-to-lymphocyte ratios (`cri_nlr` >3). Biomarkers were further categorized into quartiles using a custom function (`cut_1_23_4`) to allow for stratified analyses.
 
-The final dataset included essential variables, such as demographics (`sex`, `age`), lifestyle factors (`smoke_cat`, `total_alcohol`), biomarkers (e.g., `tc` for total cholesterol, `hdl` for high-density lipoprotein, `hba1c` for blood glucose), and disease outcomes. These variables were selected and exported as `data_prepared.dta`. For advanced analyses, such as multi-state modeling, the dataset was structured to capture transitions between disease states (Healthy → NAFLD → Cirrhosis → Death), including time intervals and durations. This ensured the dataset was robust, consistent, and ready for both descriptive and inferential analyses, particularly for modeling disease progression pathways.
+The final dataset included essential variables, such as demographics (`sex`, `age`), lifestyle factors (`smoke_cat`, `total_alcohol`), biomarkers (e.g., `tc` for total cholesterol, `hdl` for high-density lipoprotein, `hba1c` for blood glucose), and disease outcomes. These variables were selected and exported as `data_prepared.dta`. This ensured the dataset was robust, consistent, and ready for both descriptive and inferential analyses, particularly for modeling disease progression pathways.

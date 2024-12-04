@@ -426,18 +426,18 @@ socioeconomic status, where higher values indicate greater deprivation.
 derived from physical activity data and grouped into categories.
 <br></p>
 <p><code>diet_quality</code>: Diet quality score, ranging from 0
-(poorest) to 7 (highest), based on adherence to dietary guidelines.
-<br></p>
+(poorest) to 7 (highest), based on adherence to DASHguideline. <br></p>
 <p><code>sleep_hour</code>: Nightly sleep duration, measured in hours.
 <br></p>
 <p><code>smoke_cat</code>: Smoking status, categorized as current
 smoker, past smoker, or non-smoker. <br></p>
-<p><code>total_alcohol</code>: Total alcohol consumption, grouped into
-categories (non-drinker, low, moderate, high, very high). <br></p>
+<p><code>total_alcohol</code>: Total alcohol consumption (ml/week),
+grouped into categories (non-drinker, low, moderate, high, very high).
+<br></p>
 <p><code>non_hdl</code>: Non-HDL cholesterol level, a continuous
-variable indicating cardiovascular risk. <br></p>
+variable indicating cardiovascular risk. (mg/dl) <br></p>
 <p><code>tg</code>: Triglyceride levels, a continuous measure of blood
-lipid levels. <br></p>
+lipid levels. (mg/dl) <br></p>
 <p><code>bp_cat</code>: Blood pressure, categorized into intervals
 (e.g., BP=20, 40, 60, etc.). <br></p>
 <p><br></p>
@@ -588,10 +588,7 @@ were further categorized into quartiles using a custom function
 <code>tc</code> for total cholesterol, <code>hdl</code> for high-density
 lipoprotein, <code>hba1c</code> for blood glucose), and disease
 outcomes. These variables were selected and exported as
-<code>data_prepared.dta</code>. For advanced analyses, such as
-multi-state modeling, the dataset was structured to capture transitions
-between disease states (Healthy → NAFLD → Cirrhosis → Death), including
-time intervals and durations. This ensured the dataset was robust,
+<code>data_prepared.dta</code>. This ensured the dataset was robust,
 consistent, and ready for both descriptive and inferential analyses,
 particularly for modeling disease progression pathways.</p>
 </div>
