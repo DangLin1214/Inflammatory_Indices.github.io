@@ -46,6 +46,8 @@ The final NPS is the sum of these points (range: 0–4).
 **Neutrophil-Percentage-to-Albumin Ratio (NPAR):**
 $$\text{NPAR} = \frac{\text{Neutrophil Percentage}}{\text{Albumin Level (g/dL)}}$$
 
+Note: The variables were categorized into tertiles based on the 25% and 75% percentiles after being ranked in ascending order, except for NPS, which was dichotomized based on whether it was ≥ 2.
+
 <br>
 
 ### Intended Final Products
