@@ -1,0 +1,31 @@
+---
+title: "Introduction"
+output: 
+  html_document:
+    theme: flatly
+    toc: true
+    toc_float: true
+---
+
+### Motivation 
+Fatty liver disease (FLD) is one of the most prevalent chronic diseases and includes non-alcoholic fatty liver disease (NAFLD), metabolic-associated fatty liver disease (MAFLD), and metabolic-associated steatohepatitis-related liver disease (MASLD). Among these, NAFLD is the most common form, and its prevalence is rising rapidly. This condition can progress to severe complications, such as cirrhosis, liver failure, or hepatocellular carcinoma. Systemic inflammation and immune dysregulation are closely associated with FLD, underscoring the need to identify reliable, non-invasive biomarkers. Such biomarkers are critical for predicting disease progression, understanding underlying mechanisms, enabling early detection, guiding interventions, and ultimately improving clinical outcomes.
+
+Immune-related indices like the Lymphocyte-to-Monocyte Ratio (LMR), Systemic Immune-Inflammation Index (SII), Naples Prognostic Score (NPS), and Neutrophil-Percentage-to-Albumin Ratio (NPAR) have gained attention for their potential utility in assessing inflammation and immune responses. These indices are derived from routine blood tests, making them accessible and cost-effective. LMR, for instance, measures the balance between lymphocytes, which are linked to immune surveillance and anti-inflammatory responses, and monocytes, which are associated with inflammation and tissue damage. SII integrates neutrophil, platelet, and lymphocyte counts to provide a comprehensive view of immune activity and thrombosis risk. NPS combines multiple prognostic factors, including inflammatory markers, albumin levels, and platelet counts, offering a broader perspective on patient health. NPAR evaluates the relationship between neutrophil percentages and albumin levels, connecting immune function with nutritional status.
+
+The UK Biobank (UKB) dataset is well-suited for studying the relationships between these immune markers and chronic disease outcomes. With its extensive biomarker, demographic, and longitudinal health data on a representative UK population, the UKB provides an opportunity for detailed cross-sectional and longitudinal analyses. These analyses could help clarify how inflammation and immune stress contribute to chronic disease progression, ultimately advancing both clinical and public health approaches.
+
+<br>
+
+### Related Work
+Our project draws inspiration from numerous epidemiological studies that have used the UKB dataset to investigate health outcomes. Prior research has highlighted the dataset's potential for studying associations between lifestyle factors (e.g., alcohol consumption, diet quality, sleep habits) and chronic diseases. Additionally, we were influenced by research methodologies focusing on stratified analyses of biomarkers and demographic variables. This project also builds on techniques discussed in class, such as data visualization, exploratory analysis, and model-based inference.
+
+<br>
+
+### Initial Questions
+Our initial questions were structured to explore potential connections between variables and their relationships to specific indices and chronic diseases:
+
+- What are the initial associations between key variables such as age, sex, alcohol consumption, blood pressure, income, diet quality, and sleep duration?
+
+- Are there significant relationships between participants’ characteristics (e.g., age, sex, lifestyle factors) and the indices we aim to study (e.g., systemic immune-inflammation index or metabolic markers)?
+
+- Can these indices serve as predictors for specific chronic diseases, such as non-alcoholic fatty liver disease (NAFLD), and how do they interact with other variables in forecasting risk?
