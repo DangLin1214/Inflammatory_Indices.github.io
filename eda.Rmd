@@ -24,6 +24,10 @@ library(gridExtra)
 ukb_data <- read_dta("./external_data/data_prepared.dta")
 ```
 
+To understand the data structure and for further EDA, we initially examined the associations between key demographic and lifestyle variables, such as age, sex, alcohol consumption, blood pressure, income, diet quality, and sleep duration. This step aimed to identify potential patterns and relationships between participants' characteristics and overall health outcomes, laying the groundwork for subsequent analyses.
+
+To facilitate the initial understanding of inflammatory indices and for further survival analysis, we explored the relationships between blood parameters (e.g., lymphocyte-to-monocyte ratio, systemic immune-inflammation index) and exposure variables with disease outcomes like NAFLD and cirrhosis. This step provided insights into the predictive value of these indices and their interactions with other variables, offering a foundation for examining disease progression in later stages of the project.
+
 ### Age and Sex Distribution
 ```{r}
 figure_1 <- ukb_data %>%
