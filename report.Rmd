@@ -1251,7 +1251,8 @@ nafld_results_cleaned <- nafld_results %>%
     `P-value` = P,
     `P for Trend` = `P for trend`, 
     `Confidence Interval` = CI
-  )
+  ) %>%
+  slice(-c(n(), n() - 2))
 
 nafld_results_cleaned %>%
   knitr::kable(
@@ -1282,7 +1283,8 @@ cirrhosis_results_cleaned <- cirrhosis_results %>%
     `P-value` = P,
     `P for Trend` = `P for trend`, 
     `Confidence Interval` = CI
-  )
+  ) %>%
+  slice(-c(n(), n() - 2))
 
 cirrhosis_results_cleaned %>%
   knitr::kable(
