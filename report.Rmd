@@ -21,7 +21,7 @@ library(kableExtra)
 ```
 
 ## Scientific Title
-Exploring the Role of Inflammatory Biomarkers in Predicting the Risk of Non-Alcoholic Fatty Liver Disease or Cirrhosis Among Healthy Adults Using UK Biobank Data
+Exploring the Role of Inflammatory Indices in Predicting the Risk of Non-Alcoholic Fatty Liver Disease or Cirrhosis Among Healthy Adults Using UK Biobank Data
 
 <br> 
 
